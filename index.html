@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DanSmartIA - Calculatrice & Convertisseur Intelligent</title>
+  
+  <!-- Import Google Fonts Poppins et Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/Assets/CSS/style.css" />
+  <link rel="stylesheet" href="/Assets/CSS/responsive.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>DanSmartIA🎯</h1>
+    </div>
+    <nav class="header-right">
+      <ul>
+        <li><button id="btn-convertisseur" class="nav-btn active">Convertisseur</button></li>
+        <li><button id="btn-calculatrice" class="nav-btn">Calculatrice</button></li>
+        <li><button id="btn-contact" class="nav-btn">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section Convertisseur -->
+    <section id="section-convertisseur" class="active-section">
+      <h2>Convertisseur Intelligent</h2>
+      <div class="convertisseur-control">
+        <input type="number" id="input-valeur" placeholder="Entrez la valeur" />
+        <select id="select-categorie" aria-label="Choisir la catégorie">
+          <option value="monnaie">Monnaie</option>
+          <option value="poids">Poids</option>
+          <option value="distance">Distance</option>
+          <option value="temperature">Température</option>
+        </select>
+        <select id="select-unite-source" aria-label="Unité source"></select>
+        <select id="select-unite-cible" aria-label="Unité cible"></select>
+      </div>
+      <button id="btn-convertir">Convertir</button>
+      <p id="resultat-conversion" aria-live="polite"></p>
+    </section>
+
+    <!-- Section Calculatrice -->
+    <section id="section-calculatrice">
+      <h2>Calculatrice</h2>
+      <input type="text" id="ecran-calculatrice" disabled placeholder="0" aria-label="Écran calculatrice" />
+      <div class="boutons-calculatrice" role="application" aria-label="Clavier calculatrice">
+        <button class="btn-calc" data-value="7">7</button>
+        <button class="btn-calc" data-value="8">8</button>
+        <button class="btn-calc" data-value="9">9</button>
+        <button class="btn-calc" data-value="/">÷</button>
+
+        <button class="btn-calc" data-value="4">4</button>
+        <button class="btn-calc" data-value="5">5</button>
+        <button class="btn-calc" data-value="6">6</button>
+        <button class="btn-calc" data-value="*">×</button>
+
+        <button class="btn-calc" data-value="1">1</button>
+        <button class="btn-calc" data-value="2">2</button>
+        <button class="btn-calc" data-value="3">3</button>
+        <button class="btn-calc" data-value="-">-</button>
+
+        
+        <button id="btn-clear" class="btn-calc">C</button>
+        <button id="btn-racine" class="btn-calc">√</button>
+        <button id="btn-puissance" class="btn-calc">^</button>
+        <button class="btn-calc" data-value="+">+</button><br>
+        
+        <button class="btn-calc" data-value=".">.</button>
+        <button class="btn-calc" data-value="0">0</button>
+        <button id="btn-egale" class="btn-calc">=</button>
+
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="section-contact">
+      <h2>Contactez-moi</h2>
+      <form id="form-contact" action="https://formspree.io/f/yourformid" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Sujet :</label>
+        <input type="text" id="subject" name="subject" />
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+      <p id="contact-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DanSmartIA</p>
+  </footer>
+
+  <script src="/Assets/JS/appli_interface.js"></script>
+  <script src="/Assets/JS/Convertisseur.js"></script>
+  <script src="/Assets/JS/calculatrice.js"></script>
+
+
+</body>
+</html>
