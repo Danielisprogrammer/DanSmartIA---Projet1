@@ -1,0 +1,67 @@
+/* responsive.css - Styles responsives pour mobiles et tablettes */
+
+@media (max-width: 400px) {
+  h1, h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn-calc {
+    font-size: 1.2rem;
+    padding: 0.7em;
+  }
+
+  #ecran-calculatrice {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .boutons-calculatrice {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2em;
+  }
+
+  #btn-convertir {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .convertisseur-control {
+    flex-direction: column;
+  }
+
+  #btn-convertir {
+    width: 100%;
+  }
+
+  .boutons-calculatrice {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  header {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  main {
+    padding: 1.5em 1em 3em;
+  }
+
+  .convertisseur-control {
+    flex-direction: column;
+  }
+
+  nav ul {
+    gap: 1.5em;
+  }
+}
+
