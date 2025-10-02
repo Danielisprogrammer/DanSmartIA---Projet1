@@ -24,6 +24,7 @@
         <li><button id="btn-convertisseur" class="nav-btn active">Convertisseur</button></li>
         <li><button id="btn-calculatrice" class="nav-btn">Calculatrice</button></li>
         <li><button id="btn-contact" class="nav-btn">Contact</button></li>
+        <li><button id="btn-AssistantIA" class="nav-btn">AssistantIA</button></li>
       </ul>
     </nav>
   </header>
@@ -100,6 +101,14 @@
       </form>
       <p id="contact-message"></p>
     </section>
+    <!-- Section Assistant IA -->
+     <section class="AssistantIA" id="section-AssistantIA">
+      <h2>Assistant Intelligent</h2>
+      <p>Posez votre question ou décrivez votre problème concernant les fonctionalites de DanSmartIA🎯.</p>
+      <textarea id="userQuestion" placeholder="Écrivez votre question ici..." rows="5" aria-label="Zone de saisie pour poser votre question à l'IA"></textarea>
+      <button id="submitQuestion">Envoyer</button>
+      <div id="iaResponse" aria-live="polite" role="region"></div>
+    </section>
   </main>
 
   <footer>
@@ -109,6 +118,8 @@
   <script src="/Assets/JS/interface_utilisateur.js"></script>
   <script src="/Assets/JS/Convertisseur.js"></script>
   <script src="/Assets/JS/calculatrice.js"></script>
+  <script src="/Assets/JS/AssistantIA.js"></script>
+  <script src="/Assets/JS/contact.js"></script>
 
 
 </body>
