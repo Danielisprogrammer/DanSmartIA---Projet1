@@ -39,9 +39,7 @@ L'objectif est de fournir un outil pratique, facile à utiliser, avec une interf
 - `js/calculatrice.js` : logique de la calculatrice.
 
 ---
-![alt text](<Assets/images/Screenshot 2025-09-26 032344.png>)
-![alt text](<Assets/images/Screenshot 2025-09-26 032408.png>)
-![alt text](<Assets/images/Screenshot 2025-09-26 032314.png>)
+![alt text](<Assets/images/Screenshot 2025-09-26 032314.png>) ![alt text](<Assets/images/Screenshot 2025-09-26 032344.png>) ![alt text](<Assets/images/Screenshot 2025-09-26 032408.png>)
 ## Contribution
 Les contributions sont les bienvenues !  
 - Ouvrir un ticket pour proposer une amélioration ou signaler un bug.  
